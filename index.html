@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./styles.css">
+    <!--JS-->
+    <script src="./index.js" defer></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form onsubmit="return false">
+        <input type="text" id="city" name="city" value="ramona">
+        <button class="formBtn">Submit</button>
+    </form>
+    <div class="weatherContainer">
+        <div class="weatherHeader">
+            <h3 class="weatherDescription"></h3>
+            <h1 class="location"></h1>
+        </div>
+        <div class="tempContainer">
+            <p><span class=temperature></span>°</p>
+        </div>
+        <div class="weatherStats">
+            <p>Feels Like: <span class="feelsLike"></span>°</p>
+            <p class="wind"></p>
+            <p class="humidity"></p>
+        </div>
+    </div>
+    <button class="tempBtn">
+        <span>C°</span> /
+        <span class='active'>F°</span>
+    </button>
+</body>
+</html>
