@@ -2,7 +2,7 @@
 async function getWeatherData(city) {
     const apiKey = 'cada440a700d879ef02d06371b1da483'
     try {
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`, {mode: 'cors'})
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`, {mode: 'cors'})
         const data = await response.json();
         return data;
     } catch(error) {
